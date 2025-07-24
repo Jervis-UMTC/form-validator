@@ -1,0 +1,118 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+  max-width: 468px;
+  overflow: hidden;
+}
+
+#registration-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+#registration-form button:hover {
+  background-color: rgb(0, 128, 255);
+  cursor: pointer;
+}
+
+#registration-form button:active {
+  opacity: 0.8;
+
+}
+
+#registration-form button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: dodgerblue;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #555;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  color: #777;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  margin-bottom: 1.1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: dodgerblue;
+}
+
+.form-group small {
+  visibility: hidden;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: -14px;
+  left: 5px;
+  transition: all 0.2s;
+}
+
+.form-group.error small {
+  visibility: visible;
+  color: #ef4444;
+}
+
+.form-group.error input {
+  border-color: #ef4444;
+}
+
+.form-group.success input {
+  border-color: #22c55e;
+  color: #333;
+}
+
+.form-group input.long-message {
+  margin-bottom: 2.1rem;
+}
+
+.form-group input.longer-message {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
